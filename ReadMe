@@ -1,0 +1,31 @@
+关于智能家庭网关的接口说明
+device.h   ------------>  串口设备的操作的封装。
+serial.h   ------------>  串口操作。
+thread.h   ------------>  线程锁机制。(可不做修改)
+util.h     ------------>  工具。
+
+
+jni的接口函数定义在 src/zigbee_jni.cpp 中
+主要是调用device.cpp中的串口操作。
+关于串口的任何操作由android应用层控制.
+/******************************************
+                device.cpp
+******************************************/
+int  open_tty_device(const char* tty_name) ; //打开串口 由android应用层传入串口号 (/dev/tty)
+void close_tty_device(void) ;                //关闭串口 。
+int  set_speed_tty_device(int speed) ;       //设置波特率
+int  set_parity_tty_device(int parity) ;     //设置校验位
+int  set_bits_tty_device(int bits) ;         //设置数据位
+int  set_stop_bits(int stopbits) ;           //设置停止位 
+int  set_flow_control_tty_device(int flow) ; //设置软硬流控制
+int  operator_device(const char* mac,int type ,int val/*if need set it else set 0*/)	;// 发送家电操作命令 这个函数最重要。
+
+
+/*********************************************
+                zigbee_jni.cpp
+*********************************************/
+这里面的函数是供android应用层调用的 实现都是直接调用device.cpp中的内容。
+需要注意的是：
+return registerNativeMethods(env,"com/acadiatech/adcloudclient/utils/DataProvider", gMethods,  sizeof(gMethods) / sizeof(gMethods[0]));
+
+"com/acadiatech/adcloudclient/utils/DataProvider"这个是由android应用层提供给你的路径 ，要修改。其他的就没什么了。
