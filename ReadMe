@@ -1,4 +1,4 @@
-关于智能家庭网关的接口说明
+接口说明
 device.h   ------------>  串口设备的操作的封装。
 serial.h   ------------>  串口操作。
 thread.h   ------------>  线程锁机制。(可不做修改)
@@ -18,7 +18,7 @@ int  set_parity_tty_device(int parity) ;     //设置校验位
 int  set_bits_tty_device(int bits) ;         //设置数据位
 int  set_stop_bits(int stopbits) ;           //设置停止位 
 int  set_flow_control_tty_device(int flow) ; //设置软硬流控制
-int  operator_device(const char* mac,int type ,int val/*if need set it else set 0*/)	;// 发送家电操作命令 这个函数最重要。
+int  operator_device(const char* mac,int type ,int val/*if need set it else set 0*/)	;//。
 
 
 /*********************************************
