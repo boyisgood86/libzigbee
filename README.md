@@ -17,6 +17,8 @@ under android/ , use cmd like this:
 android A20 uart to cc2530 &lt;jni>
 
 
+2014/8/15 添加了  android app 代码
+
 
 Email: newleaves@126.com
 
