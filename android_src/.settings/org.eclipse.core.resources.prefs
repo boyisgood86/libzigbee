@@ -1,0 +1,11 @@
+eclipse.preferences.version=1
+encoding//src/cn/acadiatech/telecom/box/db/ex/DBOperation.java=UTF-8
+encoding//src/cn/acadiatech/telecom/box/db/ex/DBProperty.java=UTF-8
+encoding//src/cn/acadiatech/telecom/box/db/ex/MyDatabaseHelper.java=UTF-8
+encoding//src/cn/acadiatech/telecom/box/db/ex/action/DeviceDBAction.java=UTF-8
+encoding//src/cn/acadiatech/telecom/box/db/ex/action/DeviceGroupDBAction.java=UTF-8
+encoding//src/cn/acadiatech/telecom/box/db/ex/action/DeviceTypeDBAction.java=UTF-8
+encoding//src/cn/acadiatech/telecom/box/db/ex/action/ModeDBAction.java=UTF-8
+encoding//src/cn/acadiatech/telecom/box/db/ex/action/ModeDeviceGroupDBAction.java=UTF-8
+encoding//src/cn/acadiatech/telecom/box/db/ex/action/RoleDBAction.java=UTF-8
+encoding//src/cn/acadiatech/telecom/box/db/ex/action/RoomDBAction.java=UTF-8

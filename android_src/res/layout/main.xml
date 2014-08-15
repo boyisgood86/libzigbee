@@ -1,0 +1,258 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dip"
+        android:text="设置串口信息" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="2dip"
+            android:paddingLeft="5dip"
+            android:singleLine="true"
+            android:text="串口："
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/et_serialPort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="80dip"
+            android:text="/dev/ttyS0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="2dip"
+            android:paddingLeft="5dip"
+            android:singleLine="true"
+            android:text="波特率："
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/et_ttyspeed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="80dip"
+            android:text="115200" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="2dip"
+            android:paddingLeft="5dip"
+            android:singleLine="true"
+            android:text="停止位："
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/et_ttystopbits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="80dip"
+            android:text="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="2dip"
+            android:paddingLeft="5dip"
+            android:singleLine="true"
+            android:text="奇偶校验位："
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/et_ttyparity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="80dip"
+            android:text="100" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="2dip"
+            android:paddingLeft="5dip"
+            android:singleLine="true"
+            android:text="流控制："
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/et_ttyflowcontrol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="80dip"
+            android:text="100" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="2dip"
+            android:paddingLeft="5dip"
+            android:singleLine="true"
+            android:text="数据位："
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/et_ttybits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="80dip"
+            android:text="8" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/setPort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="80dip"
+        android:layout_marginRight="80dip"
+        android:text="设置串口信息" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dip"
+        android:text="控制设备" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="2dip"
+            android:paddingLeft="5dip"
+            android:singleLine="true"
+            android:text="设备Mac："
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/et_devicemac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="80dip"
+            android:text="00:2c:45:34:cd:ef:ec:ff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="2dip"
+            android:paddingLeft="5dip"
+            android:singleLine="true"
+            android:text="设备类型："
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/et_devicetype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="80dip"
+            android:text="50" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="2dip"
+            android:paddingLeft="5dip"
+            android:singleLine="true"
+            android:text="设备状态："
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/et_devicestate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="80dip"
+            android:text="48" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/setDeviceState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="80dip"
+        android:layout_marginRight="80dip"
+        android:text="控制设备状态" />
+
+    <Button
+        android:id="@+id/closePort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="80dip"
+        android:layout_marginRight="80dip"
+        android:layout_marginTop="10dip"
+        android:text="关闭串口" />
+
+</LinearLayout>
