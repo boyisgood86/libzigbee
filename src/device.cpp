@@ -24,6 +24,8 @@ enum {
 /*dddd*/
 
 
+
+
 Device::Device()
 {
 	this->fd = -1;
